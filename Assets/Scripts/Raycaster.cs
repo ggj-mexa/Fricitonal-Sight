@@ -8,7 +8,9 @@ public class Raycaster : MonoBehaviour
     public Camera fpv;
     public GameObject ui;
     RaycastHit hitInfo;
-    public bool selected; 
+
+    public bool flag = false;
+    public VoiceOverCatalog index; 
     public ScrVoiceOverLogic scrVoiceOverLogic;
 
 
@@ -25,10 +27,12 @@ public class Raycaster : MonoBehaviour
             {
 
                 scrVoiceOverLogic.ReproduceVoiceOver(hitInfo.transform.gameObject.GetComponent<VoiceOverTrigger>().voiceOverIndex);
-                 
+                Debug.Log("Error"); 
               
-                Debug.DrawRay(ray.origin, ray.direction, Color.green);
-
+                if(Input.GetMouseButtonDown(0))
+                {
+                    flag = true; 
+                }
 
                 //hitName = hitInfo.collider.gameObject.GetComponent<objectManager>().itemName;
                 //ui.GetComponent<UIText>().DisplayName(hitName);
@@ -37,15 +41,21 @@ public class Raycaster : MonoBehaviour
             }
           
         }
-        else if (Input.GetMouseButtonDown(1))
+       
+        if (Input.GetMouseButtonDown(1) && hitInfo.collider.tag == "KeySound")
         {
-            selected = true;
-            if (selected == true)
-            {
-                    
-
-            }
-
+               
+                index = hitInfo.transform.gameObject.GetComponent<VoiceOverTrigger>().voiceOverIndex;
+                Debug.Log(index);   
+            
         }
+
+        if (GameObject.Find("GoOverLogic").GetComponent<ScrVoiceOverLogic>().omit == true)
+        {
+            flag = false;
+        }
+        Debug.Log("Es");
+        Debug.Log(flag); 
+
     }
 }

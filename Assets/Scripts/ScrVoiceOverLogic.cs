@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//sustituye a los tags
+
 public enum VoiceOverCatalog
 {
     VOICE_OVER_01 = 0,
@@ -19,6 +19,9 @@ public enum VoiceOverCatalog
     VOICE_OVER_12 = 11
 }
 
+
+
+
 [System.Serializable] //nos permite ver el tipo de dato en el inspector
 public class VoiceOver //definir como un catálogo de datos
 {
@@ -30,6 +33,7 @@ public class VoiceOver //definir como un catálogo de datos
 public class ScrVoiceOverLogic : MonoBehaviour
 {
     public VoiceOver[] voiceOverLists; //se llenó en el inspector
+    public bool omit = false;
 
     public void ReproduceVoiceOver(VoiceOverCatalog index)
     {
@@ -40,6 +44,14 @@ public class ScrVoiceOverLogic : MonoBehaviour
         //y a este audio source vamos a cambiarle el audio clip
         //con respecto al indice del trigger que tocó el avatar,
         //del que está realmente en la lista de los voice overs
+
+        if (GameObject.Find("Main Camera").GetComponent<Raycaster>().flag == true)
+        {
+            this.gameObject.GetComponent<AudioSource>().Stop();
+            omit = true; 
+        }
+
+       
 
     }
 }
