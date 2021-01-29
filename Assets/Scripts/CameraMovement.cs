@@ -13,9 +13,9 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         h = horizontalSpeed * Input.GetAxis("Mouse X");
-        v  = Input.GetAxis("Mouse Y") - verticalSpeed;
+        v  = verticalSpeed * Input.GetAxis("Mouse Y");
 
         transform.Rotate(0, h, 0);
-        GetComponent<Camera>().transform.Rotate(0, 0, 0.1f);
+        GetComponent<Camera>().transform.Rotate(-v, 0, 0);
     }
 }
