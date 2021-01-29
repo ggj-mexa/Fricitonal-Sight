@@ -16,6 +16,6 @@ public class CameraMovement : MonoBehaviour
         v  = verticalSpeed * Input.GetAxis("Mouse Y");
 
         transform.Rotate(0, h, 0);
-        GetComponent<Camera>().transform.Rotate(-v, 0, 0);
+        cameraMovement.transform.Rotate(-v, 0, 0);
     }
 }
