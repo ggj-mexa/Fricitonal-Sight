@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 327678422}
   m_Layer: 0
   m_Name: ReceiverC
-  m_TagString: Untagged
+  m_TagString: VideoC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,6 +525,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stay: 0
+  Video1: {fileID: 0}
+  Video2: {fileID: 0}
+  Video3: {fileID: 0}
+  Video4: {fileID: 0}
+  VideoA: {fileID: 0}
+  VideoB: {fileID: 0}
+  VideoC: {fileID: 0}
+  VideoD: {fileID: 0}
 --- !u!1 &401656630
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +754,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stay: 0
+  Video1: {fileID: 0}
+  Video2: {fileID: 0}
+  Video3: {fileID: 0}
+  Video4: {fileID: 0}
+  VideoA: {fileID: 0}
+  VideoB: {fileID: 0}
+  VideoC: {fileID: 0}
+  VideoD: {fileID: 0}
 --- !u!1 &649756031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,7 +1346,7 @@ GameObject:
   - component: {fileID: 972231313}
   m_Layer: 0
   m_Name: ReceiverA
-  m_TagString: Untagged
+  m_TagString: VideoA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6354,7 +6370,7 @@ GameObject:
   - component: {fileID: 1109343329}
   m_Layer: 0
   m_Name: ReceiverB
-  m_TagString: Untagged
+  m_TagString: VideoB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7066,6 +7082,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stay: 0
+  Video1: {fileID: 0}
+  Video2: {fileID: 0}
+  Video3: {fileID: 0}
+  Video4: {fileID: 0}
+  VideoA: {fileID: 0}
+  VideoB: {fileID: 0}
+  VideoC: {fileID: 0}
+  VideoD: {fileID: 0}
 --- !u!1 &1460064111
 GameObject:
   m_ObjectHideFlags: 0
@@ -8846,6 +8870,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stay: 0
+  Video1: {fileID: 0}
+  Video2: {fileID: 0}
+  Video3: {fileID: 0}
+  Video4: {fileID: 0}
+  VideoA: {fileID: 0}
+  VideoB: {fileID: 0}
+  VideoC: {fileID: 0}
+  VideoD: {fileID: 0}
 --- !u!1 &2139865997
 GameObject:
   m_ObjectHideFlags: 0
@@ -8860,7 +8892,7 @@ GameObject:
   - component: {fileID: 2139865998}
   m_Layer: 0
   m_Name: ReceiverD
-  m_TagString: Untagged
+  m_TagString: VideoD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
