@@ -22,7 +22,7 @@ public class Receiver : MonoBehaviour
     {
 
         Arrange();
-        //   TurnOff();
+        
 
     }
 
@@ -31,7 +31,7 @@ public class Receiver : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            Debug.Log("Aqui estoy");
+   
             stay = false;
 
         }
@@ -48,8 +48,9 @@ public class Receiver : MonoBehaviour
 
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
-                    Video2.SetActive(false);
-                    Debug.Log("Entre al KeySound, elimino el 2");
+                    VideoA.SetActive(false);
+                    Debug.Log("Entre al KeySound, elimino el Video2");
+                
 
 
                 }
@@ -61,7 +62,7 @@ public class Receiver : MonoBehaviour
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
                     Video1.SetActive(false);
-                    Debug.Log("Entre al KeySound 2, elimino 1");
+                    Debug.Log("Entre al KeySound 2, elimino el video 1");
 
 
 
@@ -72,7 +73,7 @@ public class Receiver : MonoBehaviour
 
             case "KeySound3":
                 {
-                    Video4.SetActive(false);
+                    VideoB.SetActive(false);
                     Debug.Log("Entre al KeySound 3, elimino 4");
 
 
@@ -81,7 +82,7 @@ public class Receiver : MonoBehaviour
 
             case "KeySound4":
                 {
-                    Video3.SetActive(false);
+                    Video2.SetActive(false);
                     Debug.Log("Entre al KeySound 4, elimino 3");
 
 
@@ -90,7 +91,7 @@ public class Receiver : MonoBehaviour
 
             case "KeySound5":
                 {
-                    VideoB.SetActive(false);
+                    VideoC.SetActive(false);
                     Debug.Log("Entre al KeySound 6, elimino 6");
 
                 }
@@ -98,7 +99,7 @@ public class Receiver : MonoBehaviour
 
             case "KeySound6":
                 {
-                    VideoA.SetActive(false);
+                    Video3.SetActive(false);
                     Debug.Log("Entre al KeySound 5, elimino 5");
 
                 }
@@ -114,7 +115,7 @@ public class Receiver : MonoBehaviour
 
             case "KeySound8":
                 {
-                    VideoC.SetActive(false);
+                    Video4.SetActive(false);
                     Debug.Log("Entre al KeySound 7, elimino 8");
 
                 }

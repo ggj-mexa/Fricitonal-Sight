@@ -60,7 +60,6 @@ public class Raycaster : MonoBehaviour
     void RightMouse()
     {
         thisTag = hitInfo.transform.tag;
-        Debug.Log(thisTag);
         switch (thisTag)
         {
             case "KeySound":
@@ -69,7 +68,6 @@ public class Raycaster : MonoBehaviour
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
                     KeySound2.SetActive(false);
-                    Debug.Log("Entre al KeySound, elimino el 2");
                     receiver.RecieveOrders(thisTag);
                     
 
@@ -84,7 +82,6 @@ public class Raycaster : MonoBehaviour
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
                     KeySound.SetActive(false);
-                    Debug.Log("Entre al KeySound 2, elimino 1");
                     receiver.RecieveOrders(thisTag);
                   
 
@@ -96,7 +93,6 @@ public class Raycaster : MonoBehaviour
             case "KeySound3":
                 {
                     KeySound4.SetActive(false);
-                    Debug.Log("Entre al KeySound 3, elimino 4");
                     receiver.RecieveOrders(thisTag);
                    
                 }
@@ -105,7 +101,6 @@ public class Raycaster : MonoBehaviour
             case "KeySound4":
                 {
                     KeySound3.SetActive(false);
-                    Debug.Log("Entre al KeySound 4, elimino 3");
                     receiver.RecieveOrders(thisTag);
                     
                 }
@@ -114,7 +109,6 @@ public class Raycaster : MonoBehaviour
             case "KeySound5":
                 {
                     KeySound6.SetActive(false);
-                    Debug.Log("Entre al KeySound 6, elimino 6");
                     receiver.RecieveOrders(thisTag);
                 }
                 break;
@@ -122,7 +116,6 @@ public class Raycaster : MonoBehaviour
             case "KeySound6": 
                 {
                     KeySound5.SetActive(false);
-                    Debug.Log("Entre al KeySound 5, elimino 5");
                     receiver.RecieveOrders(thisTag);
                 }
                 break;
@@ -130,7 +123,6 @@ public class Raycaster : MonoBehaviour
             case "KeySound7":
                 {
                     KeySound8.SetActive(false);
-                    Debug.Log("Entre al KeySound 7, elimino 8");
                     receiver.RecieveOrders(thisTag);
                 }
                 break;
@@ -138,31 +130,10 @@ public class Raycaster : MonoBehaviour
             case "KeySound8":
                 {
                     KeySound7.SetActive(false);
-                    Debug.Log("Entre al KeySound 7, elimino 8");
                     receiver.RecieveOrders(thisTag);
                 }
                 break; 
 
-
-
-                /*  if (Input.GetMouseButtonDown(1) && hitInfo.collider.tag == "KeySound")
-                  {
-
-                      index = hitInfo.transform.gameObject.GetComponent<VoiceOverTrigger>().voiceOverIndex;
-
-
-                  }
-                  else
-                  {
-
-                  }
-
-                  if (GameObject.Find("GoOverLogic").GetComponent<ScrVoiceOverLogic>().omit == true)
-                  {
-                      flag = false;
-                  }
-
-                      */
         }
     }
 
