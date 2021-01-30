@@ -7,7 +7,12 @@ public class CameraMovement : MonoBehaviour
     public Camera cameraMovement;
 
     public float h, v;
-    public float horizontalSpeed, verticalSpeed; 
+    public float horizontalSpeed, verticalSpeed;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; 
+    }
 
     // Update is called once per frame
     void Update()

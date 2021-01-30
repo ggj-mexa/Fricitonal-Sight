@@ -22,6 +22,7 @@ public enum VoiceOverCatalog
 
 
 
+
 [System.Serializable] //nos permite ver el tipo de dato en el inspector
 public class VoiceOver //definir como un catálogo de datos
 {
@@ -48,10 +49,16 @@ public class ScrVoiceOverLogic : MonoBehaviour
         if (GameObject.Find("Main Camera").GetComponent<Raycaster>().flag == true)
         {
             this.gameObject.GetComponent<AudioSource>().Stop();
-            omit = true; 
+            omit = true;
+        }
+        else
+        {
+            omit = false;
         }
 
        
 
     }
 }
+
+

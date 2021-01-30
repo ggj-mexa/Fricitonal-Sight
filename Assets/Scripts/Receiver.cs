@@ -28,7 +28,8 @@ public class Receiver : MonoBehaviour
 
     public void RecieveOrders(string tag)
     {
-        Debug.Log(tag); 
+        Debug.Log(tag + "Recibi tag"); 
+        
       
     }
 

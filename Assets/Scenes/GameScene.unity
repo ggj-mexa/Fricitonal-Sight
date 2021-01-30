@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 79f37c4f444067c4182f0b7cd9b19756, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 5b8d6ce654dba5b41af39164c55d9ef1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 159811731}
   m_Layer: 0
   m_Name: OptionC/2
-  m_TagString: KeySound
+  m_TagString: KeySound6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 401656632}
   m_Layer: 0
   m_Name: ReceiverD/2
-  m_TagString: Untagged
+  m_TagString: KeySound4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -620,7 +620,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401656630}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &646660607
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &649756032
 Transform:
   m_ObjectHideFlags: 0
@@ -887,8 +887,8 @@ GameObject:
   - component: {fileID: 794219048}
   - component: {fileID: 794219047}
   m_Layer: 0
-  m_Name: OptionB/2
-  m_TagString: KeySound
+  m_Name: OptionD/2
+  m_TagString: KeySound8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1208,14 +1208,14 @@ MonoBehaviour:
   thisTag: 
   receiver: {fileID: 0}
   disableOther: 0
-  KeySound1: {fileID: 1891819794}
+  KeySound: {fileID: 1891819794}
   KeySound2: {fileID: 1992837422}
-  KeySound3: {fileID: 0}
-  KeySound4: {fileID: 0}
-  KeySound5: {fileID: 0}
-  KeySound6: {fileID: 0}
-  KeySound7: {fileID: 0}
-  KeySound8: {fileID: 0}
+  KeySound3: {fileID: 1460064111}
+  KeySound4: {fileID: 1893472811}
+  KeySound5: {fileID: 1825182734}
+  KeySound6: {fileID: 159811730}
+  KeySound7: {fileID: 1427949484}
+  KeySound8: {fileID: 794219045}
   flag: 0
   index: 0
   scrVoiceOverLogic: {fileID: 1412743868}
@@ -1444,7 +1444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &998557253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6455,7 +6455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1185911010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6729,8 +6729,8 @@ GameObject:
   - component: {fileID: 1427949487}
   - component: {fileID: 1427949486}
   m_Layer: 0
-  m_Name: OptionB
-  m_TagString: KeySound
+  m_Name: OptionD
+  m_TagString: KeySound7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6971,7 +6971,7 @@ GameObject:
   - component: {fileID: 1457255790}
   m_Layer: 0
   m_Name: ReceiverC/2
-  m_TagString: Untagged
+  m_TagString: Video3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7052,7 +7052,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457255785}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &1457255790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7082,8 +7082,8 @@ GameObject:
   - component: {fileID: 1460064114}
   - component: {fileID: 1460064113}
   m_Layer: 0
-  m_Name: OptionD
-  m_TagString: KeySound
+  m_Name: OptionB
+  m_TagString: KeySound3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7324,7 +7324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1533892246
 Transform:
   m_ObjectHideFlags: 0
@@ -7356,7 +7356,7 @@ GameObject:
   - component: {fileID: 1725906027}
   m_Layer: 0
   m_Name: ReceiverA/2
-  m_TagString: Untagged
+  m_TagString: Video1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7423,7 +7423,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725906021}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1725906025
 Transform:
   m_ObjectHideFlags: 0
@@ -7470,7 +7470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1789458852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7579,7 +7579,7 @@ GameObject:
   - component: {fileID: 1825182735}
   m_Layer: 0
   m_Name: OptionC
-  m_TagString: KeySound
+  m_TagString: KeySound5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8064,8 +8064,8 @@ GameObject:
   - component: {fileID: 1893472814}
   - component: {fileID: 1893472813}
   m_Layer: 0
-  m_Name: OptionD/2
-  m_TagString: KeySound
+  m_Name: OptionB/2
+  m_TagString: KeySound4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8293,7 +8293,7 @@ GameObject:
   - component: {fileID: 1895876934}
   m_Layer: 0
   m_Name: ReceiverB/2
-  m_TagString: Untagged
+  m_TagString: Video2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8374,7 +8374,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895876932}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1930877768
 GameObject:
   m_ObjectHideFlags: 0
@@ -8390,7 +8390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1930877769
 Transform:
   m_ObjectHideFlags: 0

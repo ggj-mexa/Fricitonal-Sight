@@ -10,6 +10,20 @@ TagManager:
   - Right
   - KeySound
   - KeySound2
+  - KeySound3
+  - KeySound4
+  - KeySound5
+  - KeySound6
+  - KeySound7
+  - KeySound8
+  - Video1
+  - Video2
+  - Video3
+  - Video4
+  - VideoA
+  - VideoB
+  - VideoC
+  - VideoD
   layers:
   - Default
   - TransparentFX
