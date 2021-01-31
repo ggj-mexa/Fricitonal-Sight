@@ -11,6 +11,8 @@ public class MemoryController : MonoBehaviour
     public Slider blend; // 0 to 1
     public Slider pan; // -1 to 1
 
+    public GameObject consolePlace;
+
     [HideInInspector]
     public Canvas console;
 
