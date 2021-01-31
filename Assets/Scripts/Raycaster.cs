@@ -54,6 +54,12 @@ public class Raycaster : MonoBehaviour
 
              
             }
+            if (Physics.Raycast(ray, out hitInfo, 15) && hitInfo.transform.tag == "Memory")
+            {
+                hitInfo.transform.gameObject.GetComponent<MemoryController>().console.enabled = true;
+                //GetComponent<CameraMovement>().enabled = false;
+                Cursor.lockState = CursorLockMode.Confined;
+            }
         }
     }
 

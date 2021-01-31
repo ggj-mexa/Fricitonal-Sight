@@ -11,9 +11,15 @@ public class MemoryController : MonoBehaviour
     public Slider blend; // 0 to 1
     public Slider pan; // -1 to 1
 
+    public Canvas console;
+
     private AudioSource sfx;
 
-    public void Awake() { sfx = GetComponentInChildren<AudioSource>(); }
+    public void Awake() 
+    { 
+        sfx = GetComponentInChildren<AudioSource>();
+        console = GetComponentInChildren<Canvas>();
+    }
     public void Start()
     {
         volume.onValueChanged.AddListener(delegate { OnVolumeChange(); });

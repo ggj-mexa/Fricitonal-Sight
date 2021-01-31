@@ -24,6 +24,7 @@ TagManager:
   - VideoB
   - VideoC
   - VideoD
+  - Memory
   layers:
   - Default
   - TransparentFX
