@@ -17,6 +17,8 @@ public class Raycaster : MonoBehaviour
     public GameObject KeySound6;
     public GameObject KeySound7;
     public GameObject KeySound8;
+    public GameObject fijo; //Agregado por Ruisu
+    public GameObject jugador; //Agregado por Ruisu
 
     public bool flag = false;
     public VoiceOverCatalog index; 
@@ -49,14 +51,18 @@ public class Raycaster : MonoBehaviour
             }
             if (Physics.Raycast(ray, out hitInfo, 15) && hitInfo.transform.tag == "Memory")
             {
-                var x = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.x;
-                var y = GetComponentInParent<Transform>().position.y;
-                var z = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.z;
+                // var x = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.x;
+                //var y = GetComponentInParent<Transform>().position.y;
+                //var z = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.z;
+                var x = fijo.transform.position.x; //Agregado por Ruisu
+                var y = fijo.transform.position.y; //Agregado por Ruisu
+                var z = fijo.transform.position.z; //Agregado por Ruisu
+
                 Vector3 moveTo = new Vector3(x, y, z);
 
                 
-                GetComponentInParent<Transform>().position = moveTo;
-                transform.position = moveTo;
+                //GetComponentInParent<Transform>().position = moveTo;
+                jugador.transform.position = moveTo; //Agregado por Ruisu
 
                 hitInfo.transform.gameObject.GetComponentInParent<MemoryController>().console.enabled = true;
                 Cursor.lockState = CursorLockMode.Confined;
