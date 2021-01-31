@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Raycaster : MonoBehaviour
 {
-    public LayerMask mask;
     public Camera fpv;
-    public GameObject ui;
     RaycastHit hitInfo;
     public string thisTag;
     public Receiver receiver;
@@ -29,11 +27,8 @@ public class Raycaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Confined;
         LeftMouse();
-        RightMouse(); 
-
-
+        RightMouse();
     }
 
 
@@ -51,14 +46,21 @@ public class Raycaster : MonoBehaviour
                 {
                     flag = true;
                 }
-
-             
             }
             if (Physics.Raycast(ray, out hitInfo, 15) && hitInfo.transform.tag == "Memory")
             {
-                hitInfo.transform.gameObject.GetComponent<MemoryController>().console.enabled = true;
-                //GetComponent<CameraMovement>().enabled = false;
+                var x = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.x;
+                var y = GetComponentInParent<Transform>().position.y;
+                var z = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.z;
+                Vector3 moveTo = new Vector3(x, y, z);
+
+                
+                GetComponentInParent<Transform>().position = moveTo;
+                transform.position = moveTo;
+
+                hitInfo.transform.gameObject.GetComponentInParent<MemoryController>().console.enabled = true;
                 Cursor.lockState = CursorLockMode.Confined;
+                GetComponentInParent<PlayerController>().enabled = false;
             }
         }
     }
@@ -69,7 +71,6 @@ public class Raycaster : MonoBehaviour
         {
             RaycastHit hitSelect;
             Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
-
 
             if (Physics.Raycast(ray, out hitSelect, 15))
             {

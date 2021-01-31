@@ -11,6 +11,7 @@ public class MemoryController : MonoBehaviour
     public Slider blend; // 0 to 1
     public Slider pan; // -1 to 1
 
+    [HideInInspector]
     public Canvas console;
 
     private AudioSource sfx;

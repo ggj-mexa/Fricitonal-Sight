@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
     public float h, v;
     public float horizontalSpeed, verticalSpeed;
 
-    private void Start()
+    private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked; 
     }

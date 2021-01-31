@@ -5,8 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController controller;
+    [HideInInspector]
+    public CharacterController controller;
     private float speed = 5f;
+    private Vector3 move;
 
     private void Awake()
     {
@@ -20,9 +22,9 @@ public class PlayerController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         float y = 0;
 
-        Vector3 move = transform.right * x + transform.up * y + transform.forward * z;
+        move = transform.right * x + transform.up * y + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-    }
 
+    }
 }
