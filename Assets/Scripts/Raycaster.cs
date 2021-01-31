@@ -65,87 +65,90 @@ public class Raycaster : MonoBehaviour
 
     void RightMouse()
     {
-        RaycastHit hitSelect; 
-        Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
-
-
-        if (Physics.Raycast(ray, out hitSelect, 15))
+        if (Input.GetMouseButtonDown(1))
         {
-            thisTag = hitSelect.transform.tag;
-            switch (thisTag)
+            RaycastHit hitSelect;
+            Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
+
+
+            if (Physics.Raycast(ray, out hitSelect, 15))
             {
-                case "KeySound":
-                    {
+                thisTag = hitSelect.transform.tag;
+                switch (thisTag)
+                {
+                    case "KeySound":
+                        {
 
-                        //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
-                        //entre los distintos objetos
-                        KeySound2.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
-
-
-
-
-                    }
-                    break;
-
-                case "KeySound2":
-                    {
-
-                        //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
-                        //entre los distintos objetos
-                        KeySound.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
+                            //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
+                            //entre los distintos objetos
+                            KeySound2.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
 
 
 
-                    }
 
-                    break;
+                        }
+                        break;
 
-                case "KeySound3":
-                    {
-                        KeySound4.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
+                    case "KeySound2":
+                        {
 
-                    }
-                    break;
+                            //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
+                            //entre los distintos objetos
+                            KeySound.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
 
-                case "KeySound4":
-                    {
-                        KeySound3.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
 
-                    }
-                    break;
 
-                case "KeySound5":
-                    {
-                        KeySound6.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
-                    }
-                    break;
+                        }
 
-                case "KeySound6":
-                    {
-                        KeySound5.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
-                    }
-                    break;
+                        break;
 
-                case "KeySound7":
-                    {
-                        KeySound8.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
-                    }
-                    break;
+                    case "KeySound3":
+                        {
+                            KeySound4.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
 
-                case "KeySound8":
-                    {
-                        KeySound7.SetActive(false);
-                        receiver.RecieveOrders(thisTag);
-                    }
-                    break;
+                        }
+                        break;
 
+                    case "KeySound4":
+                        {
+                            KeySound3.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
+
+                        }
+                        break;
+
+                    case "KeySound5":
+                        {
+                            KeySound6.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
+                        }
+                        break;
+
+                    case "KeySound6":
+                        {
+                            KeySound5.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
+                        }
+                        break;
+
+                    case "KeySound7":
+                        {
+                            KeySound8.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
+                        }
+                        break;
+
+                    case "KeySound8":
+                        {
+                            KeySound7.SetActive(false);
+                            receiver.RecieveOrders(thisTag);
+                        }
+                        break;
+
+                }
             }
         }
     }

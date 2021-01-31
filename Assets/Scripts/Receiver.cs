@@ -49,10 +49,10 @@ public class Receiver : MonoBehaviour
 
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
+                    Debug.Log("Fuck this shit im out");
+                    Video1.SetActive(false);
 
-                    VideoA.SetActive(false);
-
-                    Video1.GetComponent<VideoPlayer>().Play();
+                    VideoA.GetComponent<VideoPlayer>().Play();
     
 
                 }
@@ -60,11 +60,11 @@ public class Receiver : MonoBehaviour
 
             case "KeySound2":
                 {
-
+                    Debug.Log("Fuck this shit"); 
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
-                    Video1.SetActive(false);
-                    VideoA.GetComponent<VideoPlayer>().Play();
+                    VideoA.SetActive(false);
+                    Video1.GetComponent<VideoPlayer>().Play();
 
                 }
 

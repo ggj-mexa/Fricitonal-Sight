@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.023529414, g: 0.20784315, b: 0.25882354, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0.0101
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,8 +26,8 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5b8d6ce654dba5b41af39164c55d9ef1, type: 2}
-  m_HaloStrength: 0.5
+  m_SkyboxMaterial: {fileID: 2100000, guid: bead9d03b339fe641b8fb24f1620ca57, type: 2}
+  m_HaloStrength: 0.495
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -7014,7 +7014,7 @@ MonoBehaviour:
   Video2: {fileID: 1109343328}
   Video3: {fileID: 327678417}
   Video4: {fileID: 2139865997}
-  VideoA: {fileID: 1992837422}
+  VideoA: {fileID: 1725906021}
   VideoB: {fileID: 1895876932}
   VideoC: {fileID: 1457255785}
   VideoD: {fileID: 401656630}
@@ -8217,7 +8217,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.449
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8932,7 +8932,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
