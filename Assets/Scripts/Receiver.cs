@@ -49,11 +49,11 @@ public class Receiver : MonoBehaviour
 
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
-                    Debug.Log("entro el pejelagarto00000");
+
                     VideoA.SetActive(false);
-                    Debug.Log("entro el pejelagarto00");
+
                     Video1.GetComponent<VideoPlayer>().Play();
-                    Debug.Log("entro el pejelagarto"); 
+    
 
                 }
                 break;
@@ -64,7 +64,7 @@ public class Receiver : MonoBehaviour
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
                     Video1.SetActive(false);
-
+                    VideoA.GetComponent<VideoPlayer>().Play();
 
                 }
 
@@ -73,6 +73,7 @@ public class Receiver : MonoBehaviour
             case "KeySound3":
                 {
                     VideoB.SetActive(false);
+                    Video2.GetComponent<VideoPlayer>().Play();
 
                 }
                 break;
@@ -80,35 +81,36 @@ public class Receiver : MonoBehaviour
             case "KeySound4":
                 {
                     Video2.SetActive(false);
-       
+                    VideoB.GetComponent<VideoPlayer>().Play();
                 }
                 break;
 
             case "KeySound5":
                 {
                     VideoC.SetActive(false);
-                 
+                    Video3.GetComponent<VideoPlayer>().Play();
                 }
                 break;
 
             case "KeySound6":
                 {
                     Video3.SetActive(false);
-                  
+                    VideoC.GetComponent<VideoPlayer>().Play();
                 }
                 break;
 
             case "KeySound7":
                 {
                     VideoD.SetActive(false);
-                   
+                    Video4.GetComponent<VideoPlayer>().Play();
+
                 }
                 break;
 
             case "KeySound8":
                 {
                     Video4.SetActive(false);
-                   
+                    VideoD.GetComponent<VideoPlayer>().Play();
                 }
                 break;
 
