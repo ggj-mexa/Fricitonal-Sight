@@ -15,6 +15,8 @@ public class Receiver : MonoBehaviour
     public GameObject VideoC;
     public GameObject VideoD;
 
+    public bool secret; 
+
 
 
 
@@ -49,7 +51,7 @@ public class Receiver : MonoBehaviour
 
                     //Si es este quiero que tome el tag, y se lo mande a receiver, para poder diferenciar 
                     //entre los distintos objetos
-                    Debug.Log("Fuck this shit im out");
+
                     Video1.SetActive(false);
 
                     VideoA.GetComponent<VideoPlayer>().Play();
@@ -114,7 +116,23 @@ public class Receiver : MonoBehaviour
                 }
                 break;
 
+            case "Secret":
+                {
+                    Debug.Log("Sabroso"); 
+                    Video1.SetActive(false);
+                    Video2.SetActive(false);
+                    Video3.SetActive(false);
+                    Video4.SetActive(false);
 
+                    VideoA.SetActive(false);
+                    VideoB.SetActive(false);
+                    VideoC.SetActive(false);
+                    VideoD.SetActive(false);
+                    secret = true; 
+
+                
+                }
+                break; 
         }
 
     }

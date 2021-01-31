@@ -25,6 +25,11 @@ TagManager:
   - VideoC
   - VideoD
   - Memory
+  - Secret
+  - Video7
+  - Video8
+  - Video9
+  - Video10
   layers:
   - Default
   - TransparentFX

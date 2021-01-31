@@ -8,6 +8,7 @@ public class Raycaster : MonoBehaviour
     RaycastHit hitInfo;
     public string thisTag;
     public Receiver receiver;
+
     public bool disableOther;
     public GameObject KeySound;
     public GameObject KeySound2;
@@ -23,6 +24,7 @@ public class Raycaster : MonoBehaviour
     private GameObject consolePlace;
 
     public bool flag = false;
+    public bool secret = false; 
     public VoiceOverCatalog index; 
     public ScrVoiceOverLogic scrVoiceOverLogic;
 
@@ -172,6 +174,13 @@ public class Raycaster : MonoBehaviour
                         }
                         break;
 
+                    case "Secret":
+                        {
+                            Debug.Log("Si entro");
+                           receiver.RecieveOrders(thisTag);
+                           
+                        }
+                        break; 
                 }
             }
         }
