@@ -896,7 +896,8 @@ AudioSource:
   m_GameObject: {fileID: 794219045}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6589687415545241630, guid: 37dae0f4c43b1424c9f22f117e8be30b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 069b13e4e28b959418c5ab5409e555b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -973,7 +974,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1168,8 +1169,7 @@ MonoBehaviour:
   KeySound6: {fileID: 159811730}
   KeySound7: {fileID: 1427949484}
   KeySound8: {fileID: 794219045}
-  fijo: {fileID: 0}
-  jugador: {fileID: 0}
+  moveToHere: {fileID: 0}
   flag: 0
   index: 0
   scrVoiceOverLogic: {fileID: 1412743868}
