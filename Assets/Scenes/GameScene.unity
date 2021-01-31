@@ -1156,11 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352e73b1def28f940a234c89f15d70f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
   fpv: {fileID: 963194227}
-  ui: {fileID: 0}
   thisTag: 
   receiver: {fileID: 1436344834}
   disableOther: 0
@@ -1172,6 +1168,8 @@ MonoBehaviour:
   KeySound6: {fileID: 159811730}
   KeySound7: {fileID: 1427949484}
   KeySound8: {fileID: 794219045}
+  fijo: {fileID: 0}
+  jugador: {fileID: 0}
   flag: 0
   index: 0
   scrVoiceOverLogic: {fileID: 1412743868}
@@ -7480,12 +7478,12 @@ PrefabInstance:
     - target: {fileID: 7606073368243397609, guid: 2402581d6c151e249af081b6705644df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.15
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7606073368243397609, guid: 2402581d6c151e249af081b6705644df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 80.5
+      value: 41.2
       objectReference: {fileID: 0}
     - target: {fileID: 7606073368243397609, guid: 2402581d6c151e249af081b6705644df,
         type: 3}
@@ -7662,6 +7660,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5830109860560265911, guid: 1588d8d99871c4d47a6897d2896bf283,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0124637
+      objectReference: {fileID: 0}
+    - target: {fileID: -5830109860560265911, guid: 1588d8d99871c4d47a6897d2896bf283,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3729964
+      objectReference: {fileID: 0}
+    - target: {fileID: -5830109860560265911, guid: 1588d8d99871c4d47a6897d2896bf283,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.345
       objectReference: {fileID: 0}
     - target: {fileID: -4144807443856766443, guid: 1588d8d99871c4d47a6897d2896bf283,
         type: 3}
@@ -9084,6 +9097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aea5fed439b4684c91b9dcec8a9d7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!143 &2031109635
 CharacterController:
   m_ObjectHideFlags: 0
