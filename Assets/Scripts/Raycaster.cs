@@ -20,8 +20,7 @@ public class Raycaster : MonoBehaviour
     public GameObject KeySound8;
     
     public GameObject moveToHere; //Agregado por Ruisu
-
-    private GameObject consolePlace;
+    public GameObject player; //Agregado por Ruisu
 
     public bool flag = false;
     public bool secret = false; 
@@ -33,25 +32,20 @@ public class Raycaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        consolePlace = RayFeedback();
+
+        Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hitInfo, 15)) { moveToHere = hitInfo.transform.gameObject.GetComponentInParent<MemoryController>().consolePlace; }
 
         LeftMouse();
         RightMouse();
-    }
-
-    private GameObject RayFeedback()
-    {
-        Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hitInfo, 15)) { return hitInfo.transform.gameObject; }
-        else { return null; }
     }
 
     void LeftMouse()
     {
         Ray ray = fpv.ScreenPointToRay(Input.mousePosition);
 
-        if (consolePlace.tag == "Narrator")
+        if (Physics.Raycast(ray, out hitInfo, 15) && hitInfo.transform.tag == "Narrator")
         {
 
             if (Input.GetMouseButtonDown(0))
@@ -66,13 +60,8 @@ public class Raycaster : MonoBehaviour
         }
         if (Physics.Raycast(ray, out hitInfo, 15) && hitInfo.transform.tag == "Memory")
         {
-                //moveToHere = hitInfo.transform.gameObject.GetComponent<MemoryController>().consolePlace;
-                
-                // var x = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.x;
-                //var y = GetComponentInParent<Transform>().position.y;
-                //var z = hitInfo.transform.gameObject.GetComponentInParent<Transform>().localPosition.z;
                 var x = moveToHere.transform.position.x; //Agregado por Ruisu
-                var y = moveToHere.transform.position.y; //Agregado por Ruisu
+                var y = player.transform.position.y; //Agregado por Ruisu
                 var z = moveToHere.transform.position.z; //Agregado por Ruisu
 
                 Vector3 moveTo = new Vector3(x, y, z);
@@ -80,11 +69,10 @@ public class Raycaster : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                //GetComponentInParent<Transform>().position = moveTo;
-                transform.position = moveTo; //Agregado por Ruisu
+                player.transform.position = moveTo; //Agregado por Ruisu
 
                 hitInfo.transform.gameObject.GetComponentInParent<MemoryController>().console.enabled = true;
-                Cursor.lockState = CursorLockMode.Confined;
+                GetComponent<CamaraRotetion>().ConfineCursor();
                 GetComponentInParent<PlayerController>().enabled = false;
             }
         }

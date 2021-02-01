@@ -11,7 +11,7 @@ public float mouseSensitivity = 100f;
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        LockCursor();
     }
 
     // Update is called once per frame
@@ -27,4 +27,7 @@ public float mouseSensitivity = 100f;
         playerbody.Rotate(Vector3.up * mouseX);
 
     }
+
+    public void ConfineCursor() { Cursor.lockState = CursorLockMode.Confined; }
+    public void LockCursor() { Cursor.lockState = CursorLockMode.Locked; }
 }

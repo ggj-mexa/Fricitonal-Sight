@@ -13,7 +13,7 @@ public class TheReceiverP : MonoBehaviour
     public GameObject secret;
 
 
-    public void update()
+    public void Update()
     {
         if (GameObject.Find("ControllerVoiceLogic").GetComponent<Receiver>().secret == true)
         {
